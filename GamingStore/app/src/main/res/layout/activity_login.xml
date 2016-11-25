@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorRojoN"
+    android:orientation="vertical"
+    android:layout_weight="1"
+    android:paddingBottom="10dp"
+    tools:context=".AccountActivity">
+
+    <TextView
+        android:text="Gaming Directory"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="15"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:paddingLeft="40dp"
+        android:paddingTop="20dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="50"
+        android:layout_marginTop="20dp"
+        android:padding="15dp"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="17.5">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/splash"
+                android:layout_margin="15dp"/>
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="17.5"
+            android:orientation="vertical">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Id"
+                android:background="@color/colorRojoOp"
+                android:textSize="17dp"
+                android:padding="10dp"
+                android:textColorHint="#fff0f0"
+                android:layout_margin="10dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                android:background="@color/colorRojoOp"
+                android:textSize="17dp"
+                android:padding="10dp"
+                android:textColorHint="#fff0f0"
+                android:layout_margin="10dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="35"
+            android:padding="5dp"
+            android:orientation="vertical">
+
+            <Button
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:background="@color/colorRojoL"
+                android:text="Login"
+                android:textColor="#ffffff"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5dp"
+                android:id="@+id/btnLogin"/>
+
+            <Button
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:background="@color/colorRojoL"
+                android:text="Exit"
+                android:textColor="#ffffff"
+                android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

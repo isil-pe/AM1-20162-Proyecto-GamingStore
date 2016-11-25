@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorRojoN"
+    android:orientation="vertical"
+    android:layout_weight="1"
+    android:paddingBottom="10dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:text="Account"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="15"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:paddingLeft="40dp"
+        android:paddingTop="20dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="50"
+        android:layout_marginTop="20dp"
+        android:padding="15dp"
+        android:orientation="vertical">
+
+        <Button
+            android:layout_width="350dp"
+            android:layout_height="0dp"
+            android:layout_weight="12"
+            android:text="News"
+            android:id="@+id/btnNews"
+            android:layout_gravity="center"
+            android:background="@color/colorRojoL"
+            android:textColor="#ffffff"/>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5">
+
+        </FrameLayout>
+
+        <Button
+            android:layout_width="350dp"
+            android:layout_height="0dp"
+            android:layout_weight="12"
+            android:text="My Apps"
+            android:id="@+id/btnMyApps"
+            android:layout_gravity="center"
+            android:background="@color/colorRojoL"
+            android:textColor="#ffffff"/>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5">
+
+        </FrameLayout>
+
+        <Button
+            android:layout_width="350dp"
+            android:layout_height="0dp"
+            android:layout_weight="12"
+            android:text="Wishlist"
+            android:id="@+id/btnWishlist"
+            android:layout_gravity="center"
+            android:background="@color/colorRojoL"
+            android:textColor="#ffffff"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5">
+
+        </FrameLayout>
+
+        <Button
+            android:layout_width="350dp"
+            android:layout_height="0dp"
+            android:layout_weight="12"
+            android:text="Store"
+            android:id="@+id/btnStore"
+            android:layout_gravity="center"
+            android:background="@color/colorRojoL"
+            android:textColor="#ffffff"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="35"
+        android:padding="5dp"
+        android:orientation="vertical">
+
+
+        <Button
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:background="@color/colorRojoL"
+            android:text="Back"
+            android:id="@+id/btnBack"
+            android:textColor="#ffffff"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+</LinearLayout>
