@@ -59,7 +59,7 @@ public class MainActivity extends Activity {
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
 
                 GameEntity gameEntity= (GameEntity)adapterView.getAdapter().getItem(position);
-
+                gotoGameDetail(gameEntity);
 
             }
         });
@@ -75,7 +75,16 @@ public class MainActivity extends Activity {
         Intent intent= new Intent(MainActivity.this,
                 AccountActivity.class);
         startActivity(intent);
-        finish();
+    }
+
+    private void gotoGameDetail(GameEntity gameEntity)
+    {
+        Bundle bundle= new Bundle();
+        bundle.putSerializable("ENTITY",gameEntity);
+
+        Intent intent = new Intent(MainActivity.this, GameDetailActivity.class);
+        intent.putExtras(bundle);
+        startActivity(intent);
     }
 
 }

@@ -8,11 +8,12 @@ import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.ListView;
 
-import com.example.andre.activities.adapter.GameAdapter;
+import com.example.andre.activities.adapter.NewsAdapter;
 
 import java.util.List;
 
-import model.GameEntity;
+
+import model.NewsEntity;
 
 /**
  * Created by DOS on 24/11/2016.
@@ -20,8 +21,8 @@ import model.GameEntity;
 
 public class NewsActivity extends Activity {
     private Button btnBack;
-    private ListView lstGames;
-    private List<GameEntity> data;
+    private ListView lstNews;
+    private List<NewsEntity> data;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,26 +44,26 @@ public class NewsActivity extends Activity {
     }
 
     private void populate() {
-        GameAdapter gameAdapter= new GameAdapter(this,data );
-        lstGames.setAdapter(gameAdapter);
+        NewsAdapter newsAdapter= new NewsAdapter(this,data );
+        lstNews.setAdapter(newsAdapter);
     }
 
     private void loadData(){
-        GameApplication application= (GameApplication) getApplication();
-        data= application.getGameRepository().allGames();
+        GameApplication gameApplication= (GameApplication) getApplication();
+        data= gameApplication.getNewsRepository().allNews();
     }
 
     private void ui() {
         btnBack = (Button)findViewById(R.id.btnBack);
-        lstGames = (ListView)findViewById(R.id.lstNews);
+        lstNews = (ListView)findViewById(R.id.lstNews);
     }
 
     private void events(){
-        lstGames.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        lstNews.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
 
-                GameEntity gameEntity= (GameEntity)adapterView.getAdapter().getItem(position);
+                NewsEntity newsEntity= (NewsEntity) adapterView.getAdapter().getItem(position);
 
 
             }

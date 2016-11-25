@@ -9,10 +9,15 @@
         android:theme="@style/AppTheme" >
         <activity
             android:name=".MainActivity"
+            android:windowSoftInputMode="stateHidden"
             android:screenOrientation="portrait">
         </activity>
 
         <activity android:name=".NewsActivity"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity android:name=".GameDetailActivity"
             android:screenOrientation="portrait">
         </activity>
 

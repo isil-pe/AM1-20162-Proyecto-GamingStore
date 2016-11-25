@@ -10,14 +10,36 @@ public class GameEntity implements Serializable{
     private int id;
     private String name;
     private String description;
-    private String price;
+    private int price;
+    private String status;
     private int image;
+    private boolean favorite;
 
-
-    public GameEntity(int id, String name, String description, int image) {
+    public GameEntity(int id, String name, String description, int price, String status, int image, boolean favorite) {
         this.id = id;
         this.name = name;
         this.description = description;
+        this.price = price;
+        this.status = status;
+        this.image = image;
+        this.favorite = favorite;
+    }
+
+    public boolean isFavorite() {
+
+        return favorite;
+    }
+
+    public void setFavorite(boolean favorite) {
+        this.favorite = favorite;
+    }
+
+    public GameEntity(int id, String name, String description, int price, String status, int image) {
+        this.id = id;
+        this.name = name;
+        this.description = description;
+        this.price= price;
+        this.status= status;
         this.image = image;
     }
 
@@ -36,9 +58,13 @@ public class GameEntity implements Serializable{
 
     public void setDescription(String description) {this.description = description;}
 
-    public String getPrice() {return price;}
+    public int getPrice() {return price;}
 
-    public void setPrice(String price) {this.price = price;}
+    public void setPrice(int price) {this.price = price;}
+
+    public String getStatus() {return name;}
+
+    public void setStatus(String status) {this.name = name;}
 
     public int getImage() {return image;}
 
