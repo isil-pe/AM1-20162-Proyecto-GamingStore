@@ -49,7 +49,7 @@ public class WishlistActivity extends Activity {
 
     private void loadData(){
         GameApplication application= (GameApplication) getApplication();
-        data= application.getGameRepository().allGames();
+        data= application.getGameRepository().getFavoriteGames();
     }
 
     private void ui() {

@@ -37,16 +37,17 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
-            <TextView
-                android:layout_width="100dp"
-                android:layout_height="wrap_content"
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
                 android:text="Favoritos:"
-                android:textColor="#ffffff"/>
+                android:id="@+id/iviFavorite"
+                android:src="@drawable/favorite0"/>
 
             <Button
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:background="@drawable/favorite0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ADD FAVORITE"
                 android:id="@+id/btnFavorite"/>
 
         </LinearLayout>
