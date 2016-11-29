@@ -78,11 +78,7 @@ public class GameDetailActivity extends Activity{
             boolean favorite = gameEntity.isFavorite();
             GameEntity game = new GameEntity(gameEntity.getId(),favorite);
             game.setFavorite(favorite);
-            if(!favorite) {
-                iviFavorite.setImageResource(R.drawable.favorite0);
-            }else{
-                iviFavorite.setImageResource(R.drawable.favorite1);
-            }
+            iviFavorite.setImageResource(R.drawable.favorite1);
             gameApplication.getGameRepository().updateGameById(gameEntity.getId(),game);
 
 
