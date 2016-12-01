@@ -29,4 +29,6 @@ Game
 String id 
 String name 
 String description 
+
+![](https://github.com/isil-pe/AM1-20162-Proyecto-GamingStore/blob/master/a001.JPG)
  
