@@ -48,7 +48,7 @@ public class GameDetailActivity extends Activity{
             @Override
             public void onClick(View view) {
                 addFavorite();
-                closeSesion();
+                //closeSesion();
             }
         });
 
@@ -80,8 +80,6 @@ public class GameDetailActivity extends Activity{
             game.setFavorite(favorite);
             iviFavorite.setImageResource(R.drawable.favorite1);
             gameApplication.getGameRepository().updateGameById(gameEntity.getId(),game);
-
-
     }
 
     private void closeSesion() {

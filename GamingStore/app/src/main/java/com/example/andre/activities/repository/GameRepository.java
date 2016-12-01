@@ -68,13 +68,6 @@ public class GameRepository {
         return null;
     }
 
-    public void updateNote(int position, GameEntity gameEntity)
-    {
-        if(position<lsGameEntities.size())
-        {
-            lsGameEntities.set(position, gameEntity);
-        }
-    }
     public void updateGameById(int gameId, GameEntity gameEntity)
     {
         int position=-1;
