@@ -32,5 +32,5 @@ String description
 
 ## Diagrama
 
-![](https://github.com/isil-pe/AM1-20162-Proyecto-GamingStore/blob/master/a001.JPG)
+![](https://github.com/isil-pe/AM1-20162-Proyecto-GamingStore/blob/master/a001.PNG)
  
