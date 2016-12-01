@@ -24,10 +24,10 @@ Andre Lavado
 
 Tablas : 
 
-Game | News
------------- 
-int id | int Id
-String name | String title
+    Game      |    News
+------------- | ------------
+int id        | int Id
+String name   | String title
 String description | String notice
 int price |int image
 int image |
